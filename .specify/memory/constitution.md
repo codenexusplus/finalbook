@@ -1,55 +1,66 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!--
+Sync Impact Report:
+- Version change: 0.1.0 → 1.0.0
+- Modified principles: All principles have been replaced with a new set.
+- Added sections: "Key Standards", "Constraints", "Success Criteria".
+- Removed sections: All old sections removed.
+- Templates requiring updates:
+  - ✅ .specify/templates/plan-template.md
+  - ✅ .specify/templates/spec-template.md
+  - ✅ .specify/templates/tasks-template.md
+- Follow-up TODOs:
+  - TODO(RATIFICATION_DATE): Determine the original adoption date of this constitution.
+-->
+# Physical AI & Humanoid Robotics Textbook Constitution
+
+This Constitution establishes the non-negotiable standards for the creation of the AI/Spec-Driven textbook using Docusaurus, GitHub Pages, and the integrated RAG chatbot.
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### Core Principle 1: Technical Accuracy
+All technical explanations, code examples, and theoretical concepts must be demonstrably accurate, verified against official documentation (ROS 2, NVIDIA Isaac, etc.).
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### Core Principle 2: Educational Clarity
+The writing style must be clear, step-by-step, and suitable for a Computer Science academic audience (capstone level).
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### Core Principle 3: Architectural Minimalism
+Use the minimum viable technology stack and dependencies required to achieve the necessary functionality. Prioritize lightweight and maintainable code.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### Core Principle 4: Free-Tier Viability
+The RAG chatbot implementation must strictly adhere to the free-tier limitations of all external cloud services, including Qdrant Cloud and Neon Serverless Postgres.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+## Key Standards
 
-### [PRINCIPLE_6_NAME]
+### Key Standard 1: Book Platform
+The entire textbook must be written in Markdown/MDX and built using Docusaurus, deployed to GitHub Pages.
 
+### Key Standard 2: RAG Scope
+The Retrieval-Augmented Generation (RAG) chatbot must be closed-domain, answering questions ONLY based on the book's content.
 
-[PRINCIPLE__DESCRIPTION]
+### Key Standard 3: Tech Stack Enforcement
+The RAG backend must exclusively utilize: FastAPI, OpenAI Agents/ChatKit SDKs, Neon Serverless Postgres, and Qdrant Cloud Free Tier.
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+### Key Standard 4: Plagiarism
+0% tolerance for plagiarism in generated text; all text must be original or properly attributed technical paraphrasing.
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
+## Constraints
 
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
+### Constraint 1: Content Coverage
+The book must fully address the syllabus details for all four modules (ROS 2, Gazebo/Unity, NVIDIA Isaac, VLA) and the Capstone Project.
 
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+### Constraint 2: Key RAG Feature
+The RAG chatbot must support the function of answering questions based specifically on user-selected text within the Docusaurus book.
+
+## Success Criteria
+
+### Success Criterion 1: Full Deployment
+The Docusaurus book is successfully deployed and publicly accessible on GitHub Pages.
+
+### Success Criterion 2: Functional RAG
+The integrated RAG chatbot is fully operational, retrieves relevant context from the book, and provides accurate answers within the constraints.
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+Amendments to this constitution require documented approval and a migration plan for any affected components. All development and reviews must verify compliance with these principles.
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 1.0.0 | **Ratified**: TODO(RATIFICATION_DATE): Determine original adoption date | **Last Amended**: 2025-12-09

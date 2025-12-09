@@ -5,6 +5,18 @@
 **Status**: Draft  
 **Input**: User description: "$ARGUMENTS"
 
+## Constitution Alignment *(mandatory)*
+
+- [ ] **Technical Accuracy**: Does the spec require features that can be verified for technical accuracy?
+- [ ] **Educational Clarity**: Is the user experience designed to be clear and educational for the target audience?
+- [
+] **Architectural Minimalism**: Does the spec avoid unnecessary complexity?
+- [ ] **Free-Tier Viability**: Are the requirements compatible with free-tier service limitations?
+- [ ] **Book Platform (Docusaurus)**: Are the requirements compatible with a Docusaurus-based platform?
+- [ ] **RAG Scope (Closed-Domain)**: Is the scope of any RAG-related functionality strictly limited to the book's content?
+- [ ] **Tech Stack Enforcement**: Does the spec implicitly or explicitly require technologies outside the approved stack? (If yes, this requires a constitution amendment).
+- [ ] **Plagiarism**: Does the spec include requirements for originality and attribution?
+
 ## User Scenarios & Testing *(mandatory)*
 
 <!--

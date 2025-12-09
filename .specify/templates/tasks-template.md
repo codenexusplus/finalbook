@@ -20,37 +20,19 @@ description: "Task list template for feature implementation"
 
 ## Path Conventions
 
-- **Single project**: `src/`, `tests/` at repository root
-- **Web app**: `backend/src/`, `frontend/src/`
-- **Mobile**: `api/src/`, `ios/src/` or `android/src/`
-- Paths shown below assume single project - adjust based on plan.md structure
-
-<!-- 
-  ============================================================================
-  IMPORTANT: The tasks below are SAMPLE TASKS for illustration purposes only.
-  
-  The /sp.tasks command MUST replace these with actual tasks based on:
-  - User stories from spec.md (with their priorities P1, P2, P3...)
-  - Feature requirements from plan.md
-  - Entities from data-model.md
-  - Endpoints from contracts/
-  
-  Tasks MUST be organized by user story so each story can be:
-  - Implemented independently
-  - Tested independently
-  - Delivered as an MVP increment
-  
-  DO NOT keep these sample tasks in the generated tasks.md file.
-  ============================================================================
--->
+- **Frontend (Book)**: `docs/`, `src/` (Docusaurus)
+- **Backend (RAG API)**: `backend/app/`, `backend/tests/`
 
 ## Phase 1: Setup (Shared Infrastructure)
 
-**Purpose**: Project initialization and basic structure
+**Purpose**: Project initialization and basic structure for the book and RAG API.
 
-- [ ] T001 Create project structure per implementation plan
-- [ ] T002 Initialize [language] project with [framework] dependencies
-- [ ] T003 [P] Configure linting and formatting tools
+- [ ] T001 Initialize Docusaurus project in the root directory.
+- [ ] T002 Create initial book structure in `docs/`.
+- [ ] T003 Initialize FastAPI project in `backend/`.
+- [ ] T004 [P] Configure linting and formatting for both frontend (Prettier) and backend (Black, Ruff).
+- [ ] T005 [P] Setup `requirements.txt` for the backend with FastAPI, Uvicorn, OpenAI SDK, Qdrant client, and Neon driver.
+- [ ] T006 Setup environment variables (`.env`) for database connection strings, Qdrant API key, and OpenAI API key.
 
 ---
 

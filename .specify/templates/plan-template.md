@@ -12,26 +12,32 @@
 ## Technical Context
 
 <!--
-  ACTION REQUIRED: Replace the content in this section with the technical details
-  for the project. The structure here is presented in advisory capacity to guide
-  the iteration process.
+  ACTION REQUIRED: The constitution has set the primary technology stack.
+  Verify and fill in any remaining details for this specific feature.
 -->
 
-**Language/Version**: [e.g., Python 3.11, Swift 5.9, Rust 1.75 or NEEDS CLARIFICATION]  
-**Primary Dependencies**: [e.g., FastAPI, UIKit, LLVM or NEEDS CLARIFICATION]  
-**Storage**: [if applicable, e.g., PostgreSQL, CoreData, files or N/A]  
-**Testing**: [e.g., pytest, XCTest, cargo test or NEEDS CLARIFICATION]  
-**Target Platform**: [e.g., Linux server, iOS 15+, WASM or NEEDS CLARIFICATION]
-**Project Type**: [single/web/mobile - determines source structure]  
-**Performance Goals**: [domain-specific, e.g., 1000 req/s, 10k lines/sec, 60 fps or NEEDS CLARIFICATION]  
-**Constraints**: [domain-specific, e.g., <200ms p95, <100MB memory, offline-capable or NEEDS CLARIFICATION]  
-**Scale/Scope**: [domain-specific, e.g., 10k users, 1M LOC, 50 screens or NEEDS CLARIFICATION]
+**Language/Version**: Python 3.11+ (Backend), JavaScript/TypeScript (Frontend)
+**Primary Dependencies**: FastAPI (Backend), Docusaurus/React (Frontend), OpenAI SDKs, Qdrant Client
+**Storage**: Neon Serverless Postgres
+**Testing**: pytest (Backend), Jest/Vitest (Frontend)
+**Target Platform**: GitHub Pages (Frontend), Cloud Hosting for FastAPI (Backend)
+**Project Type**: Web Application (Docusaurus book + RAG API)
+**Performance Goals**: Fast page loads for the book, RAG responses under 5 seconds.
+**Constraints**: Must adhere to free-tier limits for all cloud services (Qdrant, Neon).
+**Scale/Scope**: Closed-domain RAG based on book content.
 
 ## Constitution Check
 
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
-[Gates determined based on constitution file]
+- [ ] **Technical Accuracy**: Is the proposed work verifiable against source documentation?
+- [ ] **Educational Clarity**: Is the approach suitable for the target academic audience?
+- [ ] **Architectural Minimalism**: Does this plan use the simplest viable technology stack?
+- [ ] **Free-Tier Viability**: Does the design respect free-tier limits of Qdrant and Neon?
+- [ ] **Book Platform**: Does this align with the Docusaurus/MDX-based platform?
+- [ ] **RAG Scope**: Is the scope strictly limited to the book's content?
+- [ ] **Tech Stack Enforcement**: Does the plan exclusively use the approved stack (FastAPI, OpenAI, Neon, Qdrant)?
+- [ ] **Content Coverage**: Does this plan address the required syllabus modules?
 
 ## Project Structure
 
