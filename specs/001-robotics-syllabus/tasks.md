@@ -25,7 +25,7 @@ description: "Task list for Physical AI & Humanoid Robotics Textbook Content Dev
 
 - [ ] T001 Initialize Docusaurus project in the root directory. (A-1)
 - [ ] T002 Create initial book structure in `docs/` and configure `docusaurus.config.js`, `sidebars.js`. (A-1)
-- [ ] T003 Initialize FastAPI project in `backend/` (app.py, main.py). (B-1)
+- [X] T003 Initialize FastAPI project in `backend/` (app.py, main.py). (B-1)
 - [ ] T004 [P] Configure linting and formatting for both frontend (Prettier) and backend (Black, Ruff).
 - [ ] T005 [P] Setup `requirements.txt` for the backend with FastAPI, Uvicorn, OpenAI SDK, Qdrant client, and Neon driver in `backend/requirements.txt`. (B-1)
 - [ ] T006 Setup environment variables (`.env`) for Qdrant, Neon, and OpenAI credentials in `backend/.env`. (B-1)
