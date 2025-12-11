@@ -17,8 +17,7 @@ COLLECTION_NAME = os.getenv("QDRANT_COLLECTION_NAME")
 # We'll use 1536 for OpenAI's model.
 VECTOR_DIMENSION = 1536
 
-def get_qdrant_client():
-    """Returns the configured Qdrant client instance."""
+def get_qdrant_client():    """Returns the configured Qdrant client instance."""
     if not QDRANT_URL or not QDRANT_API_KEY:
          raise ValueError("QDRANT_URL or QDRANT_API_KEY not set in .env")
          
