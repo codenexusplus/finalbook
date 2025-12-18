@@ -82,7 +82,7 @@ An existing user returns to the site and signs in using the 'Sign In' button in 
 -   **FR-007**: The RAG Chatbot MUST receive user hardware profile information to provide context-aware answers for logged-in users.
 -   **FR-008**: The RAG Chatbot MUST provide generic answers for users who are not logged in.
 -   **FR-009**: The session token MUST be accessible to Docusaurus components.
--   **FR-010**: The system MUST prepend the user's hardware profile to the chatbot's system prompt. [NEEDS CLARIFICATION: How should the hardware profile be formatted when prepended to the RAG chatbot's system prompt?]
+-   **FR-010**: The system MUST prepend the user's hardware profile to the chatbot's system prompt as a JSON string. (e.g., `{"RTX_GPU_Model": "3080", "RAM_GB": 32, "Jetson_Device": "Nano"}`)
 
 ### Key Entities *(include if feature involves data)*
 
