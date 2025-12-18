@@ -68,7 +68,7 @@
 - [ ] T015 [P] [US3] Create the `useUserSession.js` React hook in `physical-ai-book/src/hooks/useUserSession.js`. This hook will have a function to fetch data from the `/users/me` endpoint and store user state.
 - [ ] T016 [P] [US3] Create the `AuthButtons.js` component in `physical-ai-book/src/components/AuthButtons.js` that displays "Sign In" or "Profile / Sign Out" based on the state from the `useUserSession` hook.
 - [ ] T017 [US3] Integrate `AuthButtons.js` into the Docusaurus navbar. This may require swizzling the Navbar component and placing the logic in `physical-ai-book/src/theme/Navbar/index.js`.
-- [ ] T018 [US3] Create a React Context provider (`SessionProvider`) to wrap the root of the Docusaurus application in `physical-ai-book/src/theme/Root.js` to make the session available globally.
+- [X] T018 [US3] Create a React Context provider (`SessionProvider`) to wrap the root of the Docusaurus application in `physical-ai-book/src/theme/Root.js` to make the session available globally.
 
 **Checkpoint**: User Story 3 should be functional. Users can log in and out, and the frontend is aware of the session state.
 
