@@ -80,9 +80,9 @@ The RAG chatbot automatically receives the user's hardware specifications (RTX G
 -   **FR-001**: The system MUST implement user authentication using **FastAPI-Users** with a Neon Postgres database (existing functionality from `005-advanced-identity-auth`).
 -   **FR-002**: User profiles MUST store custom fields for hardware details (`RTX GPU model`, `VRAM`), and software experience (`ROS experience level`).
 -   **FR-003**: A UI toggle MUST be present at the start of chapter pages to enable/disable content personalization.
--   **FR-004**: When personalization is enabled, chapter content MUST dynamically adapt based on the user's hardware profile. **[NEEDS CLARIFICATION: What are the specific rules/mechanisms for content personalization (e.g., hiding specific blocks, dynamic rewriting, highlighting, alternative content)?]**
+-   **FR-004**: When personalization is enabled, chapter content MUST dynamically adapt based on the user's hardware profile by hiding or showing specific Markdown blocks.
 -   **FR-005**: A UI toggle MUST be present on chapter pages to trigger Urdu translation of the current content.
--   **FR-006**: The system MUST integrate with an LLM service to perform English-to-Urdu translation of Markdown content. **[NEEDS CLARIFICATION: What is the scope of Urdu translation (entire chapter, selected paragraphs, dynamic based on user interaction)? Which LLM API will be used?]**
+-   **FR-006**: The system MUST integrate with OpenAI's GPT API to perform English-to-Urdu translation of entire Markdown chapter content.
 -   **FR-007**: The RAG chatbot interface MUST automatically send the logged-in user's hardware specifications to the RAG backend as part of its system prompt.
 -   **FR-008**: The RAG backend MUST process the user's hardware specifications to provide tailored advice within chatbot responses.
 
