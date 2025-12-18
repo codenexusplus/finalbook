@@ -1,19 +1,21 @@
 <!--
 Sync Impact Report:
-- Version change: 0.1.0 → 1.0.0
-- Modified principles: All principles have been replaced with a new set.
-- Added sections: "Key Standards", "Constraints", "Success Criteria".
-- Removed sections: All old sections removed.
+- Version change: 1.0.0 → 1.1.0
+- Modified principles:
+  - Key Standard 3: Tech Stack Enforcement (updated to include FastAPI-Users and clarify frontend/backend stack)
+- Added sections:
+  - Core Principle 5: Content Personalization
+  - Core Principle 6: Multilingual Support
+  - Key Standard 5: User Data Flow
 - Templates requiring updates:
-  - ✅ .specify/templates/plan-template.md
-  - ✅ .specify/templates/spec-template.md
-  - ✅ .specify/templates/tasks-template.md
+  - ⚠ .specify/templates/plan-template.md (Needs new constitution check items for Personalization and Translation)
+  - ⚠ .specify/templates/spec-template.md (Needs to reflect new personalization/translation capabilities)
 - Follow-up TODOs:
   - TODO(RATIFICATION_DATE): Determine the original adoption date of this constitution.
 -->
 # Physical AI & Humanoid Robotics Textbook Constitution
 
-This Constitution establishes the non-negotiable standards for the creation of the AI/Spec-Driven textbook using Docusaurus, GitHub Pages, and the integrated RAG chatbot.
+This Constitution establishes the non-negotiable standards for the creation of the AI/Spec-Driven textbook.
 
 ## Core Principles
 
@@ -27,21 +29,35 @@ The writing style must be clear, step-by-step, and suitable for a Computer Scien
 Use the minimum viable technology stack and dependencies required to achieve the necessary functionality. Prioritize lightweight and maintainable code.
 
 ### Core Principle 4: Free-Tier Viability
-The RAG chatbot implementation must strictly adhere to the free-tier limitations of all external cloud services, including Qdrant Cloud and Neon Serverless Postgres.
+The RAG chatbot and any other backend services must strictly adhere to the free-tier limitations of all external cloud services, including Qdrant Cloud and Neon Serverless Postgres.
+
+### Core Principle 5: Content Personalization
+The book's content MUST be capable of dynamically adjusting based on user hardware profiles stored in their account.
+
+### Core Principle 6: Multilingual Support
+The platform MUST support content translation into Urdu via LLM calls.
 
 ## Key Standards
 
 ### Key Standard 1: Book Platform
-The entire textbook must be written in Markdown/MDX and built using Docusaurus, deployed to GitHub Pages.
+The entire textbook must be written in Markdown/MDX and built using **Docusaurus**, deployed to GitHub Pages.
 
 ### Key Standard 2: RAG Scope
 The Retrieval-Augmented Generation (RAG) chatbot must be closed-domain, answering questions ONLY based on the book's content.
 
 ### Key Standard 3: Tech Stack Enforcement
-The RAG backend must exclusively utilize: FastAPI, OpenAI Agents/ChatKit SDKs, Neon Serverless Postgres, and Qdrant Cloud Free Tier.
+The technology stack is strictly defined as:
+- **Frontend**: Docusaurus (React)
+- **Backend**: FastAPI (Python)
+- **Database**: Neon Serverless Postgres
+- **Identity**: FastAPI-Users
+- **RAG Services**: OpenAI SDKs, Qdrant Cloud Free Tier
 
 ### Key Standard 4: Plagiarism
 0% tolerance for plagiarism in generated text; all text must be original or properly attributed technical paraphrasing.
+
+### Key Standard 5: User Data Flow
+All user hardware and skill data MUST be stored in the Neon database. On the frontend, this data MUST be accessed via a centralized React Context provider.
 
 ## Constraints
 
@@ -63,4 +79,4 @@ The integrated RAG chatbot is fully operational, retrieves relevant context from
 
 Amendments to this constitution require documented approval and a migration plan for any affected components. All development and reviews must verify compliance with these principles.
 
-**Version**: 1.0.0 | **Ratified**: TODO(RATIFICATION_DATE): Determine original adoption date | **Last Amended**: 2025-12-09
+**Version**: 1.1.0 | **Ratified**: TODO(RATIFICATION_DATE): Determine original adoption date | **Last Amended**: 2025-12-18
