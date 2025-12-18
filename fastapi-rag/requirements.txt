@@ -1,18 +1,10 @@
-# FastAPI: The async web framework for the API service
 fastapi
 uvicorn
-
-# Vector Database Client (Qdrant Cloud Free Tier)
-qdrant-client>=1.6.0
-
-# LLM/Embedding Client (OpenAI is used for both for simplicity)
-openai>=1.0.0
-tiktoken # Used for efficient token counting
-
-# PostgreSQL Client (Neon Serverless Postgres)
-psycopg2-binary # Client for connecting to the Postgres metadata store
-
-# Data Manipulation (Needed for ingestion tasks later)
-pydantic
-tenacity
+cohere
+qdrant-client
 python-dotenv
+langchain-community
+beautifulsoup4
+requests
+psycopg2-binary
+lxml

@@ -21,10 +21,10 @@ const Chatbot = () => {
       const response = await fetch('http://localhost:8000/query', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ query: inputValue }),
+        body: JSON.stringify({ question: inputValue }),
       });
       const data = await response.json();
-      const botMessage = { text: data.response, sender: 'bot' }; // Assuming the backend returns { response: "..." }
+      const botMessage = { text: data.answer, sender: 'bot' }; // Assuming the backend returns { answer: "..." }
       setMessages((prevMessages) => [...prevMessages, botMessage]);
     } catch (error) {
       console.error('Error fetching data:', error);
